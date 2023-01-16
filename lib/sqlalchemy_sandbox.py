@@ -38,16 +38,16 @@ if __name__ == '__main__':
 
 ###The code does the same as the two above. Instead of using the metadata_obj and the create_all method, we directly call the create method ON the students Table instance. 
 
-metadata_obj = MetaData()
+    # metadata_obj = MetaData()
 
-students = Table(
-    "students",
-    metadata_obj,
-    Column("id", Integer(), primary_key=True),
-    Column("name", String())
-)
+    # students = Table(
+    #     "students",
+    #     metadata_obj,
+    #     Column("id", Integer(), primary_key=True),
+    #     Column("name", String())
+    # )
 
 
-if __name__ == '__main__':
-    engine = create_engine("sqlite:///students.db")
-    students.create(engine)
+    # if __name__ == '__main__':
+    #     engine = create_engine("sqlite:///students.db")
+    #     students.create(engine)
